@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_tkE90LSjEeuBT-n9nj8gug" name="WhatDoWeEat">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_tqRscLSjEeuBT-n9nj8gug">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Model" xmi:id="_2KGYcLSjEeuBT-n9nj8gug" name="1-Requirements">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uzKxsLSkEeuBT-n9nj8gug" annotatedElement="_2KGYcLSjEeuBT-n9nj8gug">
+      <body>I build the system and manage it </body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Node" xmi:id="_mrWWALSkEeuBT-n9nj8gug" name="WhatDoWeEat-expo" useCase="_podnYLSkEeuBT-n9nj8gug _QxdcILSlEeuBT-n9nj8gug _b6p-ILSlEeuBT-n9nj8gug _dadkALSlEeuBT-n9nj8gug _qQgCULSlEeuBT-n9nj8gug _ryojcLSlEeuBT-n9nj8gug _uZQAYLSlEeuBT-n9nj8gug _dBo-4LSmEeuBT-n9nj8gug _l0sI4LSmEeuBT-n9nj8gug _IFVHkLSnEeuBT-n9nj8gug _iddR4LSnEeuBT-n9nj8gug _nZPPYLSnEeuBT-n9nj8gug _HoMqMLSoEeuBT-n9nj8gug">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_lZk9YLSqEeukiZ-rfLl62w" annotatedElement="_mrWWALSkEeuBT-n9nj8gug">
+        <body>Is a mobile application that help manage house inventory and meals preparation</body>
+      </ownedComment>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_podnYLSkEeuBT-n9nj8gug" name="Meal" subject="_mrWWALSkEeuBT-n9nj8gug">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_LBH1MLSlEeuBT-n9nj8gug" annotatedElement="_podnYLSkEeuBT-n9nj8gug">
+          <body>Prepare, eat and keep the left over</body>
+        </ownedComment>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_fMkeALSpEeukiZ-rfLl62w" name="ExtensionPoint2"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_f7c9QbSpEeukiZ-rfLl62w" name="ExtensionPoint3"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_gjzWsLSpEeukiZ-rfLl62w" name="ExtensionPoint4"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_QxdcILSlEeuBT-n9nj8gug" name="Eat Meals" subject="_mrWWALSkEeuBT-n9nj8gug">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_aaRJcLSlEeuBT-n9nj8gug" annotatedElement="_QxdcILSlEeuBT-n9nj8gug">
+          <body>Eat meals and keep a list of eated one for repetition purpose. Keep a photo for record.</body>
+        </ownedComment>
+        <extend xmi:type="uml:Extend" xmi:id="_fMhasLSpEeukiZ-rfLl62w" extendedCase="_podnYLSkEeuBT-n9nj8gug" extensionLocation="_fMkeALSpEeukiZ-rfLl62w"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_b6p-ILSlEeuBT-n9nj8gug" name="Keep leftover" subject="_mrWWALSkEeuBT-n9nj8gug">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Df0xgLSmEeuBT-n9nj8gug" annotatedElement="_b6p-ILSlEeuBT-n9nj8gug">
+          <body>Put leftover in the fridge and keep a dated list with photo of the container </body>
+        </ownedComment>
+        <extend xmi:type="uml:Extend" xmi:id="_f7c9QLSpEeukiZ-rfLl62w" extendedCase="_podnYLSkEeuBT-n9nj8gug" extensionLocation="_f7c9QbSpEeukiZ-rfLl62w"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_dadkALSlEeuBT-n9nj8gug" name="Prepare" subject="_mrWWALSkEeuBT-n9nj8gug">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_kQx7kLSlEeuBT-n9nj8gug" annotatedElement="_dadkALSlEeuBT-n9nj8gug">
+          <body>Prepare meals using items in inventory and leftover</body>
+        </ownedComment>
+        <extend xmi:type="uml:Extend" xmi:id="_gjyvoLSpEeukiZ-rfLl62w" extendedCase="_podnYLSkEeuBT-n9nj8gug" extensionLocation="_gjzWsLSpEeukiZ-rfLl62w"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_i4gkQLSpEeukiZ-rfLl62w" name="ExtensionPoint5"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_jlx58bSpEeukiZ-rfLl62w" name="ExtensionPoint6"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_kRxdQLSpEeukiZ-rfLl62w" name="ExtensionPoint7"/>
+        <include xmi:type="uml:Include" xmi:id="_6MS7MLSmEeuBT-n9nj8gug" addition="_b6p-ILSlEeuBT-n9nj8gug"/>
+        <include xmi:type="uml:Include" xmi:id="_EmPxkLSnEeuBT-n9nj8gug" addition="_l0sI4LSmEeuBT-n9nj8gug"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_qQgCULSlEeuBT-n9nj8gug" name="Record preparation time" subject="_mrWWALSkEeuBT-n9nj8gug">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OUqNELSmEeuBT-n9nj8gug" annotatedElement="_qQgCULSlEeuBT-n9nj8gug">
+          <body></body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_d38_ALSqEeukiZ-rfLl62w" annotatedElement="_qQgCULSlEeuBT-n9nj8gug">
+          <body>Record time it take to prepare a receipe to better plan next meals</body>
+        </ownedComment>
+        <extend xmi:type="uml:Extend" xmi:id="_VQG_cLSqEeukiZ-rfLl62w" extendedCase="_uZQAYLSlEeuBT-n9nj8gug" extensionLocation="_VQHmgLSqEeukiZ-rfLl62w"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_ryojcLSlEeuBT-n9nj8gug" name="Notify when meal ready" subject="_mrWWALSkEeuBT-n9nj8gug">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_S1vyoLSmEeuBT-n9nj8gug" annotatedElement="_ryojcLSlEeuBT-n9nj8gug">
+          <body>Send SMS (ring) to family when meal is ready</body>
+        </ownedComment>
+        <extend xmi:type="uml:Extend" xmi:id="_jlx58LSpEeukiZ-rfLl62w" extendedCase="_dadkALSlEeuBT-n9nj8gug" extensionLocation="_jlx58bSpEeukiZ-rfLl62w"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_uZQAYLSlEeuBT-n9nj8gug" name="record receipe" subject="_mrWWALSkEeuBT-n9nj8gug">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ad-vULSmEeuBT-n9nj8gug" annotatedElement="_uZQAYLSlEeuBT-n9nj8gug">
+          <body>Record information associate with meal to create a receipe and reuse it later</body>
+        </ownedComment>
+        <extend xmi:type="uml:Extend" xmi:id="_kRw2MLSpEeukiZ-rfLl62w" extendedCase="_dadkALSlEeuBT-n9nj8gug" extensionLocation="_kRxdQLSpEeukiZ-rfLl62w"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_VQHmgLSqEeukiZ-rfLl62w" name="ExtensionPoint3"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_dBo-4LSmEeuBT-n9nj8gug" name="Synch with family member" subject="_mrWWALSkEeuBT-n9nj8gug">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_kyZlcLSmEeuBT-n9nj8gug" annotatedElement="_dBo-4LSmEeuBT-n9nj8gug">
+          <body>Sync inventory, shopping list, receipe, and leftover with family members</body>
+        </ownedComment>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_l0sI4LSmEeuBT-n9nj8gug" name="Inventory" classifierBehavior="_5nSM0LSqEeukiZ-rfLl62w" subject="_mrWWALSkEeuBT-n9nj8gug">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_1Dl8ALSmEeuBT-n9nj8gug" annotatedElement="_l0sI4LSmEeuBT-n9nj8gug">
+          <body>Keep code (barcode), description, nbItem, percents of use and location of each items</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:Interaction" xmi:id="_5nSM0LSqEeukiZ-rfLl62w" name="Interaction5">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_9e8TgLStEeukiZ-rfLl62w">
+            <body>If item not in inventory
+
+</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_tq-2ELSuEeukiZ-rfLl62w">
+            <body>If item as subitems
+</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_G6T6YLSxEeukiZ-rfLl62w">
+            <body>If localisation do not exist
+</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_D8C9ALSyEeukiZ-rfLl62w">
+            <body>In a loop</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_h41EYLSzEeukiZ-rfLl62w">
+            <body>Add to shopping list button should always be present after a code scan</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_sNnG4LSzEeukiZ-rfLl62w">
+            <body>loop</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8V-AoLSqEeukiZ-rfLl62w" name="" type="_vXXq8LSkEeuBT-n9nj8gug"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9vgmcLSqEeukiZ-rfLl62w" name="" type="_l0sI4LSmEeuBT-n9nj8gug"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_R4d4wLSrEeukiZ-rfLl62w" name="" type="_O-Kq0LSrEeukiZ-rfLl62w"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Z9XjULSrEeukiZ-rfLl62w" name="" type="_mrWWALSkEeuBT-n9nj8gug"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_8V8ygLSqEeukiZ-rfLl62w" name="" represents="_8V-AoLSqEeukiZ-rfLl62w" coveredBy="_uwvEkbSrEeukiZ-rfLl62w _uxBYcLSrEeukiZ-rfLl62w _tDlw0bSsEeukiZ-rfLl62w _tEBOobSsEeukiZ-rfLl62w _-peFkLSwEeukiZ-rfLl62w _-y2rELSwEeukiZ-rfLl62w _7B4GELSrEeukiZ-rfLl62w _7CM2MLSrEeukiZ-rfLl62w _XNg1YLSsEeukiZ-rfLl62w _XN7FELSsEeukiZ-rfLl62w _rFm50LSvEeukiZ-rfLl62w _rOqIIbSvEeukiZ-rfLl62w _9a3Z4bSvEeukiZ-rfLl62w _9kOxQLSvEeukiZ-rfLl62w _MkBxYLSwEeukiZ-rfLl62w _MtQl4bSwEeukiZ-rfLl62w __e1x4LSxEeukiZ-rfLl62w __sXQgLSxEeukiZ-rfLl62w"/>
+          <lifeline xmi:type="uml:Lifeline" xmi:id="_Z9W8QLSrEeukiZ-rfLl62w" name="" represents="_Z9XjULSrEeukiZ-rfLl62w" coveredBy="_uwvroLSrEeukiZ-rfLl62w _uxAxYbSrEeukiZ-rfLl62w _tDmX4LSsEeukiZ-rfLl62w _tEBOoLSsEeukiZ-rfLl62w _-peFkbSwEeukiZ-rfLl62w _-y2EAbSwEeukiZ-rfLl62w _7B4GEbSrEeukiZ-rfLl62w _7CMPIbSrEeukiZ-rfLl62w _XNg1YbSsEeukiZ-rfLl62w _XN6eAbSsEeukiZ-rfLl62w _rFng4LSvEeukiZ-rfLl62w _rOqIILSvEeukiZ-rfLl62w _9a4A8LSvEeukiZ-rfLl62w _9kOKMLSvEeukiZ-rfLl62w _MkBxYbSwEeukiZ-rfLl62w _MtQl4LSwEeukiZ-rfLl62w __e1x4bSxEeukiZ-rfLl62w __sWpcbSxEeukiZ-rfLl62w _uw-VILSrEeukiZ-rfLl62w _7CKZ8LSrEeukiZ-rfLl62w _XN4BwLSsEeukiZ-rfLl62w _tD-yYLSsEeukiZ-rfLl62w _rOnE0LSvEeukiZ-rfLl62w _9kLG4LSvEeukiZ-rfLl62w _MtNikLSwEeukiZ-rfLl62w _-ywkcLSwEeukiZ-rfLl62w __sUNMLSxEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uwvEkbSrEeukiZ-rfLl62w" name="Message7SendEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_uwvEkLSrEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uwvroLSrEeukiZ-rfLl62w" name="Message7ReceiveEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_uwvEkLSrEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_uw-VILSrEeukiZ-rfLl62w" name="BehaviorExecutionSpecification10" covered="_Z9W8QLSrEeukiZ-rfLl62w" finish="_uxAxYbSrEeukiZ-rfLl62w" start="_uwvroLSrEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uxAxYbSrEeukiZ-rfLl62w" name="Message12SendEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_uxAxYLSrEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uxBYcLSrEeukiZ-rfLl62w" name="Message12ReceiveEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_uxAxYLSrEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tDlw0bSsEeukiZ-rfLl62w" name="Message28SendEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_tDlw0LSsEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tDmX4LSsEeukiZ-rfLl62w" name="Message28ReceiveEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_tDlw0LSsEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_tD-yYLSsEeukiZ-rfLl62w" name="BehaviorExecutionSpecification31" covered="_Z9W8QLSrEeukiZ-rfLl62w" finish="_tEBOoLSsEeukiZ-rfLl62w" start="_tDmX4LSsEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tEBOoLSsEeukiZ-rfLl62w" name="Message33SendEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_tEAnkLSsEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tEBOobSsEeukiZ-rfLl62w" name="Message33ReceiveEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_tEAnkLSsEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-peFkLSwEeukiZ-rfLl62w" name="Message58SendEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_-pdegLSwEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-peFkbSwEeukiZ-rfLl62w" name="Message58ReceiveEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_-pdegLSwEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_-ywkcLSwEeukiZ-rfLl62w" name="BehaviorExecutionSpecification61" covered="_Z9W8QLSrEeukiZ-rfLl62w" finish="_-y2EAbSwEeukiZ-rfLl62w" start="_-peFkbSwEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-y2EAbSwEeukiZ-rfLl62w" name="Message63SendEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_-y2EALSwEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-y2rELSwEeukiZ-rfLl62w" name="Message63ReceiveEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_-y2EALSwEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7B4GELSrEeukiZ-rfLl62w" name="Message14SendEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_7B3fALSrEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7B4GEbSrEeukiZ-rfLl62w" name="Message14ReceiveEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_7B3fALSrEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_7CKZ8LSrEeukiZ-rfLl62w" name="BehaviorExecutionSpecification17" covered="_Z9W8QLSrEeukiZ-rfLl62w" finish="_7CMPIbSrEeukiZ-rfLl62w" start="_7B4GEbSrEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7CMPIbSrEeukiZ-rfLl62w" name="Message19SendEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_7CMPILSrEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7CM2MLSrEeukiZ-rfLl62w" name="Message19ReceiveEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_7CMPILSrEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XNg1YLSsEeukiZ-rfLl62w" name="Message21SendEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_XNgOULSsEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XNg1YbSsEeukiZ-rfLl62w" name="Message21ReceiveEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_XNgOULSsEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_XN4BwLSsEeukiZ-rfLl62w" name="BehaviorExecutionSpecification24" covered="_Z9W8QLSrEeukiZ-rfLl62w" finish="_XN6eAbSsEeukiZ-rfLl62w" start="_XNg1YbSsEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XN6eAbSsEeukiZ-rfLl62w" name="Message26SendEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_XN6eALSsEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XN7FELSsEeukiZ-rfLl62w" name="Message26ReceiveEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_XN6eALSsEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_rFm50LSvEeukiZ-rfLl62w" name="Message37SendEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_rFmSwLSvEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_rFng4LSvEeukiZ-rfLl62w" name="Message37ReceiveEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_rFmSwLSvEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_rOnE0LSvEeukiZ-rfLl62w" name="BehaviorExecutionSpecification40" covered="_Z9W8QLSrEeukiZ-rfLl62w" finish="_rOqIILSvEeukiZ-rfLl62w" start="_rFng4LSvEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_rOqIILSvEeukiZ-rfLl62w" name="Message42SendEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_rOphELSvEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_rOqIIbSvEeukiZ-rfLl62w" name="Message42ReceiveEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_rOphELSvEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9a3Z4bSvEeukiZ-rfLl62w" name="Message44SendEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_9a3Z4LSvEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9a4A8LSvEeukiZ-rfLl62w" name="Message44ReceiveEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_9a3Z4LSvEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_9kLG4LSvEeukiZ-rfLl62w" name="BehaviorExecutionSpecification47" covered="_Z9W8QLSrEeukiZ-rfLl62w" finish="_9kOKMLSvEeukiZ-rfLl62w" start="_9a4A8LSvEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9kOKMLSvEeukiZ-rfLl62w" name="Message49SendEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_9kNjILSvEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9kOxQLSvEeukiZ-rfLl62w" name="Message49ReceiveEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_9kNjILSvEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MkBxYLSwEeukiZ-rfLl62w" name="Message51SendEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_MkBKULSwEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MkBxYbSwEeukiZ-rfLl62w" name="Message51ReceiveEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_MkBKULSwEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_MtNikLSwEeukiZ-rfLl62w" name="BehaviorExecutionSpecification54" covered="_Z9W8QLSrEeukiZ-rfLl62w" finish="_MtQl4LSwEeukiZ-rfLl62w" start="_MkBxYbSwEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MtQl4LSwEeukiZ-rfLl62w" name="Message56SendEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="_MtP-0LSwEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MtQl4bSwEeukiZ-rfLl62w" name="Message56ReceiveEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="_MtP-0LSwEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="__e1x4LSxEeukiZ-rfLl62w" name="Message66SendEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="__e0jwLSxEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="__e1x4bSxEeukiZ-rfLl62w" name="Message66ReceiveEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="__e0jwLSxEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="__sUNMLSxEeukiZ-rfLl62w" name="BehaviorExecutionSpecification69" covered="_Z9W8QLSrEeukiZ-rfLl62w" finish="__sWpcbSxEeukiZ-rfLl62w" start="__e1x4bSxEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="__sWpcbSxEeukiZ-rfLl62w" name="Message71SendEvent" covered="_Z9W8QLSrEeukiZ-rfLl62w" message="__sWpcLSxEeukiZ-rfLl62w"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="__sXQgLSxEeukiZ-rfLl62w" name="Message71ReceiveEvent" covered="_8V8ygLSqEeukiZ-rfLl62w" message="__sWpcLSxEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_uwvEkLSrEeukiZ-rfLl62w" name="beginToAddItemInInventory" receiveEvent="_uwvroLSrEeukiZ-rfLl62w" sendEvent="_uwvEkbSrEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_uxAxYLSrEeukiZ-rfLl62w" name="ask code, qty" messageSort="reply" receiveEvent="_uxBYcLSrEeukiZ-rfLl62w" sendEvent="_uxAxYbSrEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_7B3fALSrEeukiZ-rfLl62w" name="addItem(code,description,qtySubItem,weight/volume,unit, photo)" receiveEvent="_7B4GEbSrEeukiZ-rfLl62w" sendEvent="_7B4GELSrEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_7CMPILSrEeukiZ-rfLl62w" name="list of item added today, as for subitem scan" messageSort="reply" receiveEvent="_7CM2MLSrEeukiZ-rfLl62w" sendEvent="_7CMPIbSrEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_XNgOULSsEeukiZ-rfLl62w" name="addSubItem(codeItem, codeSubItem,photo)" receiveEvent="_XNg1YbSsEeukiZ-rfLl62w" sendEvent="_XNg1YLSsEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_XN6eALSsEeukiZ-rfLl62w" name="nb total of sub items" messageSort="reply" receiveEvent="_XN7FELSsEeukiZ-rfLl62w" sendEvent="_XN6eAbSsEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_tDlw0LSsEeukiZ-rfLl62w" name="addItem(code,quantity,longitude,latitude)" receiveEvent="_tDmX4LSsEeukiZ-rfLl62w" sendEvent="_tDlw0bSsEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_tEAnkLSsEeukiZ-rfLl62w" name="code, description" messageSort="reply" receiveEvent="_tEBOobSsEeukiZ-rfLl62w" sendEvent="_tEBOoLSsEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_rFmSwLSvEeukiZ-rfLl62w" name="snackTime(code)" receiveEvent="_rFng4LSvEeukiZ-rfLl62w" sendEvent="_rFm50LSvEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_rOphELSvEeukiZ-rfLl62w" name="confirm item remove from inventory" messageSort="reply" receiveEvent="_rOqIIbSvEeukiZ-rfLl62w" sendEvent="_rOqIILSvEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_9a3Z4LSvEeukiZ-rfLl62w" name="destroyExpiredItems(code)" receiveEvent="_9a4A8LSvEeukiZ-rfLl62w" sendEvent="_9a3Z4bSvEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_9kNjILSvEeukiZ-rfLl62w" name="confirm item remove from inventory" messageSort="reply" receiveEvent="_9kOxQLSvEeukiZ-rfLl62w" sendEvent="_9kOKMLSvEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_MkBKULSwEeukiZ-rfLl62w" name="checkInventory(code)" receiveEvent="_MkBxYbSwEeukiZ-rfLl62w" sendEvent="_MkBxYLSwEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_MtP-0LSwEeukiZ-rfLl62w" name="code, description, photo,  [quantity,localisation], quantité total" messageSort="reply" receiveEvent="_MtQl4bSwEeukiZ-rfLl62w" sendEvent="_MtQl4LSwEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_-pdegLSwEeukiZ-rfLl62w" name="addLocalisation(name)" receiveEvent="_-peFkbSwEeukiZ-rfLl62w" sendEvent="_-peFkLSwEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="_-y2EALSwEeukiZ-rfLl62w" name="Message63" messageSort="reply" receiveEvent="_-y2rELSwEeukiZ-rfLl62w" sendEvent="_-y2EAbSwEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="__e0jwLSxEeukiZ-rfLl62w" name="mealsTime(receipeId,code)" receiveEvent="__e1x4bSxEeukiZ-rfLl62w" sendEvent="__e1x4LSxEeukiZ-rfLl62w"/>
+          <message xmi:type="uml:Message" xmi:id="__sWpcLSxEeukiZ-rfLl62w" name="list of items for the meals" messageSort="reply" receiveEvent="__sXQgLSxEeukiZ-rfLl62w" sendEvent="__sWpcbSxEeukiZ-rfLl62w"/>
+        </ownedBehavior>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_oe92cLSpEeukiZ-rfLl62w" name="ExtensionPoint2"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_vBYakLSpEeukiZ-rfLl62w" name="ExtensionPoint3"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_wXi8QLSpEeukiZ-rfLl62w" name="ExtensionPoint4"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_IFVHkLSnEeuBT-n9nj8gug" name="Share with community" subject="_mrWWALSkEeuBT-n9nj8gug">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_c-0e8LSnEeuBT-n9nj8gug" annotatedElement="_IFVHkLSnEeuBT-n9nj8gug">
+          <body>Item description, map of store, item price and location in store are shared with community</body>
+        </ownedComment>
+        <extend xmi:type="uml:Extend" xmi:id="_oe9PYLSpEeukiZ-rfLl62w" extendedCase="_l0sI4LSmEeuBT-n9nj8gug" extensionLocation="_oe92cLSpEeukiZ-rfLl62w"/>
+        <extend xmi:type="uml:Extend" xmi:id="_sDXxULSpEeukiZ-rfLl62w" extendedCase="_iddR4LSnEeuBT-n9nj8gug" extensionLocation="_sDYYYLSpEeukiZ-rfLl62w"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_iddR4LSnEeuBT-n9nj8gug" name="Map of store" subject="_mrWWALSkEeuBT-n9nj8gug">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_vBXeYLSnEeuBT-n9nj8gug" annotatedElement="_iddR4LSnEeuBT-n9nj8gug">
+          <body>Create a map of a store with item location to prepare our shopping list.  Record item location in store.</body>
+        </ownedComment>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_sDYYYLSpEeukiZ-rfLl62w" name="ExtensionPoint3"/>
+        <include xmi:type="uml:Include" xmi:id="_8b3UoLSnEeuBT-n9nj8gug" addition="_nZPPYLSnEeuBT-n9nj8gug"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_nZPPYLSnEeuBT-n9nj8gug" name="Shopping" subject="_mrWWALSkEeuBT-n9nj8gug">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_6nDIELSnEeuBT-n9nj8gug" annotatedElement="_nZPPYLSnEeuBT-n9nj8gug">
+          <body>I want to prepare a shopping list and follow it when shopping.  Will add new item to shopping during shopping as well as record item location and store map.</body>
+        </ownedComment>
+        <extend xmi:type="uml:Extend" xmi:id="_vBXzgLSpEeukiZ-rfLl62w" extendedCase="_l0sI4LSmEeuBT-n9nj8gug" extensionLocation="_vBYakLSpEeukiZ-rfLl62w"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_HoMqMLSoEeuBT-n9nj8gug" name="Snack" subject="_mrWWALSkEeuBT-n9nj8gug">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_NMq_YLSoEeuBT-n9nj8gug" annotatedElement="_HoMqMLSoEeuBT-n9nj8gug">
+          <body>Take a snack and remove item from inventory
+</body>
+        </ownedComment>
+        <extend xmi:type="uml:Extend" xmi:id="_wXiVMLSpEeukiZ-rfLl62w" extendedCase="_l0sI4LSmEeuBT-n9nj8gug" extensionLocation="_wXi8QLSpEeukiZ-rfLl62w"/>
+      </ownedUseCase>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_qPZrkLSkEeuBT-n9nj8gug" name="Me">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_OcYo4LSqEeukiZ-rfLl62w" annotatedElement="_qPZrkLSkEeuBT-n9nj8gug">
+        <body>I am the developper/owner of the application and use it with my family and sell it to community</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_CDRwcLSlEeuBT-n9nj8gug" general="_vXXq8LSkEeuBT-n9nj8gug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_vXXq8LSkEeuBT-n9nj8gug" name="My wife">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_8IfNALSkEeuBT-n9nj8gug" annotatedElement="_vXXq8LSkEeuBT-n9nj8gug">
+        <body>She prepare meals with leftover and items from the inventory, make shopping list, do shopping and put back new items in inventory.
+</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_C3teELSlEeuBT-n9nj8gug" general="_9YjtwLSkEeuBT-n9nj8gug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_9YjtwLSkEeuBT-n9nj8gug" name="Kids">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_AdNKgLSlEeuBT-n9nj8gug" annotatedElement="_9YjtwLSkEeuBT-n9nj8gug">
+        <body>I am always hungry</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EMrs8LSlEeuBT-n9nj8gug" name="Manage and admin" memberEnd="_EMsUArSlEeuBT-n9nj8gug _EMsUA7SlEeuBT-n9nj8gug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EMsUALSlEeuBT-n9nj8gug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EMsUAbSlEeuBT-n9nj8gug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_EMsUArSlEeuBT-n9nj8gug" name="whatdoweeat-expo" type="_mrWWALSkEeuBT-n9nj8gug" association="_EMrs8LSlEeuBT-n9nj8gug"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_EMsUA7SlEeuBT-n9nj8gug" name="me" type="_qPZrkLSkEeuBT-n9nj8gug" association="_EMrs8LSlEeuBT-n9nj8gug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Osn2kLSlEeuBT-n9nj8gug" memberEnd="_OsodorSlEeuBT-n9nj8gug _Osodo7SlEeuBT-n9nj8gug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OsodoLSlEeuBT-n9nj8gug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OsodobSlEeuBT-n9nj8gug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_OsodorSlEeuBT-n9nj8gug" name="meal" type="_podnYLSkEeuBT-n9nj8gug" association="_Osn2kLSlEeuBT-n9nj8gug"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Osodo7SlEeuBT-n9nj8gug" name="my wife" type="_vXXq8LSkEeuBT-n9nj8gug" association="_Osn2kLSlEeuBT-n9nj8gug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_F0DogLSnEeuBT-n9nj8gug" name="Manage" memberEnd="_F0EPkrSnEeuBT-n9nj8gug _F0EPk7SnEeuBT-n9nj8gug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_F0EPkLSnEeuBT-n9nj8gug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_F0EPkbSnEeuBT-n9nj8gug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_F0EPkrSnEeuBT-n9nj8gug" name="inventory" type="_l0sI4LSmEeuBT-n9nj8gug" association="_F0DogLSnEeuBT-n9nj8gug"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_F0EPk7SnEeuBT-n9nj8gug" name="my wife" type="_vXXq8LSkEeuBT-n9nj8gug" association="_F0DogLSnEeuBT-n9nj8gug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_9OYWsLSnEeuBT-n9nj8gug" name="Manage" memberEnd="_9OY9wrSnEeuBT-n9nj8gug _9OY9w7SnEeuBT-n9nj8gug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9OY9wLSnEeuBT-n9nj8gug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9OY9wbSnEeuBT-n9nj8gug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_9OY9wrSnEeuBT-n9nj8gug" name="shopping" type="_nZPPYLSnEeuBT-n9nj8gug" association="_9OYWsLSnEeuBT-n9nj8gug"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_9OY9w7SnEeuBT-n9nj8gug" name="manage" type="_vXXq8LSkEeuBT-n9nj8gug" association="_9OYWsLSnEeuBT-n9nj8gug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JDgKkLSoEeuBT-n9nj8gug" name="Hungry" memberEnd="_JDgKk7SoEeuBT-n9nj8gug _JDgxoLSoEeuBT-n9nj8gug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JDgKkbSoEeuBT-n9nj8gug" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JDgKkrSoEeuBT-n9nj8gug" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_JDgKk7SoEeuBT-n9nj8gug" name="snack" type="_HoMqMLSoEeuBT-n9nj8gug" association="_JDgKkLSoEeuBT-n9nj8gug"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_JDgxoLSoEeuBT-n9nj8gug" name="kids" type="_9YjtwLSkEeuBT-n9nj8gug" association="_JDgKkLSoEeuBT-n9nj8gug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_O-Kq0LSrEeukiZ-rfLl62w" name="MobilePhone"/>
+  </packagedElement>
+</uml:Model>
